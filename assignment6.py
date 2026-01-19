@@ -126,6 +126,11 @@ print(f"Linear Regression R2 Score: {r2_lr}")
 # STEP 2: MODEL CREATION AND TRAINING
 # Decision Tree learns non-linear patterns by recursively
 # splitting the data to minimize prediction error.
+
+# WHY SUITABLE :
+# The California Housing dataset contains complex, non-linear relationships between features and house prices.
+# Decision Trees can capture these non-linear patterns without requiring feature scaling and can model feature 
+# interactions effectively.
 # ======================================================================================================================
 dt_model = DecisionTreeRegressor(random_state=42)
 dt_model.fit(X_train, y_train)
